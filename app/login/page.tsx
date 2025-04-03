@@ -80,11 +80,13 @@ const LoginButton = styled(Button)`
 `;
 
 type Props = {
-  onLogin: () => void;
+  params: { 
+    onLogin: () => void;
+   };
 }
 
-export default function Login(props:Props) {
-  const { onLogin } = props;
+export default function Login({params}:Props) {
+  const { onLogin } = params;
   const [showPassword, setShowPassword] = useState(false);
   // const [isHidden, setIsHidden] = useState(true);
 
