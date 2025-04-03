@@ -79,12 +79,11 @@ const LoginButton = styled(Button)`
   margin-top: 15px;
 `;
 
-interface Props {
+interface IProps {
   onLogin: () => void;
 }
 
-export default function Login(props:Props) {
-  const { onLogin } = props;
+const Login: React.FC<IProps> = ({onLogin}) => {
   const [showPassword, setShowPassword] = useState(false);
   // const [isHidden, setIsHidden] = useState(true);
 
@@ -122,3 +121,5 @@ export default function Login(props:Props) {
   </Container>
   );
 };
+
+export default Login;
