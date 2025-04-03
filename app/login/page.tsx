@@ -79,10 +79,7 @@ const LoginButton = styled(Button)`
   margin-top: 15px;
 `;
 
-interface IProps {
-}
-
-const Login: React.FC<IProps> = ({}) => {
+const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   // const [isHidden, setIsHidden] = useState(true);
 
