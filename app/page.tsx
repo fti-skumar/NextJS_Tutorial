@@ -1,9 +1,9 @@
 'use client';
-import React, { use, useState } from "react";
+import React, { useState } from "react";
 import Login from "./login/page";
 
 export default function Home() {
-  const [isLoggedIn, setisLoggedIn] = useState(false);
+  const [_, setisLoggedIn] = useState(false);
 
   const onLogin = () => {
     setisLoggedIn(true);

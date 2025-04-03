@@ -85,7 +85,7 @@ interface IProps {
 
 const Login: React.FC<IProps> = ({onLogin = () => {}}) => {
   const [showPassword, setShowPassword] = useState(false);
-  const [isHidden, setIsHidden] = useState(true);
+  // const [isHidden, setIsHidden] = useState(true);
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
