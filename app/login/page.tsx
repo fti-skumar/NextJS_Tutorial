@@ -80,10 +80,9 @@ const LoginButton = styled(Button)`
 `;
 
 interface IProps {
-  onLogin: () => void;
 }
 
-const Login: React.FC<IProps> = ({onLogin}) => {
+const Login: React.FC<IProps> = ({}) => {
   const [showPassword, setShowPassword] = useState(false);
   // const [isHidden, setIsHidden] = useState(true);
 
@@ -106,7 +105,7 @@ const Login: React.FC<IProps> = ({onLogin}) => {
           {showPassword ? <LuEye className='text-[20px]' /> : <LuEyeOff className='text-[20px]' />}
         </div>
       </InputContainer>
-      <LoginButton className='hover:opacity-85 rounded-[5px]' onClick={onLogin}>Login</LoginButton>
+      <LoginButton className='hover:opacity-85 rounded-[5px]' onClick={() => {}}>Login</LoginButton>
     </LeftContainer>
     <RightContainer>
       <Image
