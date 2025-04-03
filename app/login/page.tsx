@@ -83,7 +83,8 @@ interface IProps {
   onLogin: () => void;
 }
 
-const Login: React.FC<IProps> = ({onLogin = () => {}}) => {
+export default function Login(props:IProps) {
+  const { onLogin } = props;
   const [showPassword, setShowPassword] = useState(false);
   // const [isHidden, setIsHidden] = useState(true);
 
@@ -121,5 +122,3 @@ const Login: React.FC<IProps> = ({onLogin = () => {}}) => {
   </Container>
   );
 };
-
-export default Login;
