@@ -1,4 +1,4 @@
-'use client';
+"use client"
 import React, { useEffect, useState } from "react";
 import Login from "./login/page";
 
@@ -26,7 +26,7 @@ export default function Home() {
         bg-[linear-gradient(to_bottom_left,rgba(255,225,230,0.75)_5%,#fff_30%,#fff_60%,rgba(255,225,230,0.75)_100%)]
       "
     >
-      <Login params={{onLogin}} />
+      <Login {...{onLogin}} />
     </div>
   );
 }
