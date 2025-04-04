@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
-import Image from 'next/image';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
@@ -81,7 +80,7 @@ export default function Login(props: LoginProps) {
         <LoginButton className='hover:opacity-85 rounded-[5px]' onClick={() => {}}>Login</LoginButton>
       </LeftContainer>
       <div className='w-[418px] h-full bg-[#94b7ff] flex justify-center items-center rounded-[15px] ml-auto'>
-        <Image
+        <img
           src={`/assets/login-security.svg?ver=${Date.now()}`}
           width={418}
           height={560}
