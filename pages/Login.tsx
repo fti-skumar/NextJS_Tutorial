@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
-import LoginIllustration from '../assets/login-security.svg';
 import Image from 'next/image';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -83,8 +82,9 @@ export default function Login(props: LoginProps) {
       </LeftContainer>
       <div className='w-[418px] h-full bg-[#94b7ff] flex justify-center items-center rounded-[15px] ml-auto'>
         <Image
-          key={Date.now()}
-          src={LoginIllustration}
+          src={`/assets/login-security.svg?ver=${Date.now()}`}
+          width={418}
+          height={560}
           alt='Login Illustration'
           style={{ width: '100%', height: '100%' }}
         />
