@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react";
-import Login from "./login/page";
+import Login from "@/pages/Login";
 
 export default function Home() {
   const [isLoggedIn, setisLoggedIn] = useState(false);

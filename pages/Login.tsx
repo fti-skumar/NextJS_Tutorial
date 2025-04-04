@@ -62,7 +62,7 @@ export default function Login(props: LoginProps) {
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
-  }
+  };
 
   return (
     <Container className='w-full h-[560px] max-w-[411px] flex justify-center items-center padding-[10px] border-[1px] border-[#94b7ff] shadow-[rgba(50,69,82,0.15)_0px_20px_30px_0px] rounded-[15px] overflow-hidden'>
