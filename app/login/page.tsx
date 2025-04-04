@@ -52,7 +52,8 @@ type LoginProps = {
   isLoggedIn: boolean;
 }
 
-const Login: React.FC<LoginProps> = ({isLoggedIn}) => {
+export default function Login(props: LoginProps) {
+  const {isLoggedIn} = props;
   const [showPassword, setShowPassword] = useState(false);
 
   useEffect(() => {
@@ -64,32 +65,30 @@ const Login: React.FC<LoginProps> = ({isLoggedIn}) => {
   }
 
   return (
-  <Container className='w-full h-[560px] max-w-[411px] flex justify-center items-center padding-[10px] border-[1px] border-[#94b7ff] shadow-[rgba(50,69,82,0.15)_0px_20px_30px_0px] rounded-[15px] overflow-hidden'>
-    <LeftContainer className='opacity-[0] w-[0] h-full flex items-center gap-[20px] flex-col p-[80px_0]'>
-      <LoginHeading>Hello NextJS!</LoginHeading>
-      <InputContainer>
-        <Label htmlFor='username' className='text-[16px] text-[#263238]'>Username</Label>
-        <Input className='rounded-[5px]' id='username' type='text' placeholder=''/>
-      </InputContainer>
-      <InputContainer>
-        <Label htmlFor='password' className='text-[16px] text-[#263238]'>Password</Label>
-        <Input className='rounded-[5px]' id='password' type={showPassword ? 'text' : 'password'} placeholder='' />
-        <div className='absolute right-2 top-9.5 cursor-pointer' onClick={togglePasswordVisibility}>
-          {showPassword ? <LuEye className='text-[20px]' /> : <LuEyeOff className='text-[20px]' />}
-        </div>
-      </InputContainer>
-      <LoginButton className='hover:opacity-85 rounded-[5px]' onClick={() => {}}>Login</LoginButton>
-    </LeftContainer>
-    <div className='w-[418px] h-full bg-[#94b7ff] flex justify-center items-center rounded-[15px] ml-auto'>
-      <Image
-        loading='eager'
-        src={LoginIllustration}
-        alt='Login Illustration'
-        style={{ width: '100%', height: '100%' }}
-      />
-    </div>
-  </Container>
+    <Container className='w-full h-[560px] max-w-[411px] flex justify-center items-center padding-[10px] border-[1px] border-[#94b7ff] shadow-[rgba(50,69,82,0.15)_0px_20px_30px_0px] rounded-[15px] overflow-hidden'>
+      <LeftContainer className='opacity-[0] w-[0] h-full flex items-center gap-[20px] flex-col p-[80px_0]'>
+        <LoginHeading>Hello NextJS!</LoginHeading>
+        <InputContainer>
+          <Label htmlFor='username' className='text-[16px] text-[#263238]'>Username</Label>
+          <Input className='rounded-[5px]' id='username' type='text' placeholder=''/>
+        </InputContainer>
+        <InputContainer>
+          <Label htmlFor='password' className='text-[16px] text-[#263238]'>Password</Label>
+          <Input className='rounded-[5px]' id='password' type={showPassword ? 'text' : 'password'} placeholder='' />
+          <div className='absolute right-2 top-9.5 cursor-pointer' onClick={togglePasswordVisibility}>
+            {showPassword ? <LuEye className='text-[20px]' /> : <LuEyeOff className='text-[20px]' />}
+          </div>
+        </InputContainer>
+        <LoginButton className='hover:opacity-85 rounded-[5px]' onClick={() => {}}>Login</LoginButton>
+      </LeftContainer>
+      <div className='w-[418px] h-full bg-[#94b7ff] flex justify-center items-center rounded-[15px] ml-auto'>
+        <Image
+          loading='eager'
+          src={LoginIllustration}
+          alt='Login Illustration'
+          style={{ width: '100%', height: '100%' }}
+        />
+      </div>
+    </Container>
   );
 };
-
-export default Login;
