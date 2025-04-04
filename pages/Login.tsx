@@ -83,7 +83,6 @@ export default function Login(props: LoginProps) {
       </LeftContainer>
       <div className='w-[418px] h-full bg-[#94b7ff] flex justify-center items-center rounded-[15px] ml-auto'>
         <Image
-          loading='eager'
           src={LoginIllustration}
           alt='Login Illustration'
           style={{ width: '100%', height: '100%' }}
