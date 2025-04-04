@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from "react";
-import Login from "./login/page";
+import Login from "@/pages/Login";
 
 export default function Home() {
   const [isLoggedIn, setisLoggedIn] = useState(false);
@@ -27,7 +27,7 @@ export default function Home() {
         bg-[linear-gradient(to_bottom_left,rgba(255,225,230,0.75)_5%,#fff_30%,#fff_60%,rgba(255,225,230,0.75)_100%)]
       "
     >
-      <Login />
+      <Login isLoggedIn={isLoggedIn} />
     </div>
   );
 }
