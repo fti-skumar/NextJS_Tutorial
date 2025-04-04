@@ -86,6 +86,7 @@ export default function Login(props: LoginProps) {
           src={LoginIllustration}
           alt='Login Illustration'
           style={{ width: '100%', height: '100%' }}
+          unoptimized
         />
       </div>
     </Container>
