@@ -6,7 +6,7 @@ if (!MONGODB_URI) {
   throw new Error("MONGODB_URI not found!");
 }
 
-// eslint-disable-next-line import/no-mutable-exports
+// eslint-disable-next-line
 const cached = (global as any).mongoose || { conn: null, promise: null };
 
 export async function connectToDB() {
