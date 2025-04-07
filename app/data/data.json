@@ -1,0 +1,1197 @@
+{
+  "data": [
+    {
+        "id": 9,
+        "cam_id": "10.232.4.162C03100",
+        "camera_name": "\u9ed2\u702c\uff29\uff23\u5165\u53e3\uff12",
+        "capture_server_name": "DEB-HYPV-e764ee0267b94b7d96e4cc8e55056e3f",
+        "capture_server_ip": "192.168.30.78",
+        "latitude": 34.3330555556,
+        "longitude": 132.6491666667,
+        "installation": null,
+        "type_mode": "",
+        "kanri_inst": "\u4e2d\u56fd\u5730\u65b9\u6574\u5099\u5c40",
+        "kanri_office": "\u5e83\u5cf6\u56fd\u9053\u4e8b\u52d9\u6240",
+        "kanri_office_code": "41",
+        "code4": "0000",
+        "kanri_branch": null,
+        "addr_zip": null,
+        "addr_pref": "\u5e83\u5cf6\u770c",
+        "addr_city": "\u9ed2\u702c\u753a",
+        "addr_town": "\u6771\u5e83\u5cf6\u5e02",
+        "rosenkind": "",
+        "rosen": "\u6771\u5e83\u5cf6\u5449\u9053\u8def",
+        "jouge": "\u4e0a\u308a",
+        "kilopost": 12.45,
+        "sisetukind": null,
+        "sisetu": null,
+        "uri": "239.202.123.8:6310",
+        "capture_interval": 600,
+        "encoderate": "\u9ad8\u30ec\u30fc\u30c8\uff28\uff12\uff16\uff14\uff28\uff24",
+        "fetch_enabled": true,
+        "stream_ftp_upload_enabled": true,
+        "snapshot_resolution": "720x480",
+        "deleted": false,
+        "deleted_from_meta": false,
+        "is_present_in_meta": true,
+        "meta_sync": true,
+        "access_and_preset_info": {
+            "cam_id": "10.232.4.162C03100",
+            "capture_server_name": "DEB-HYPV-e764ee0267b94b7d96e4cc8e55056e3f",
+            "ptz_preset": null,
+            "ptz_correction_enabled": false,
+            "ptz_error_status": null,
+            "ptz_error_title": null,
+            "ptz_error_description": null,
+            "camera_code": "74151705",
+            "camera_ip": "10.236.150.198",
+            "camera_port": 28000
+        },
+        "fetch_status_info": {
+            "id": 9,
+            "cam_id": "10.232.4.162C03100",
+            "capture_server_name": "DEB-HYPV-e764ee0267b94b7d96e4cc8e55056e3f",
+            "current_ptz": null,
+            "interlaced_mode": false,
+            "stream_payload_type": 103,
+            "fetch_status": 1,
+            "fetch_status_desc": "Fetch success",
+            "fetch_status_desc_jp": "\u30d5\u30a7\u30c3\u30c1\u6210\u529f",
+            "last_update_time": "2025-04-07T16:30:00"
+        },
+        "upload_status_info": [
+            {
+                "ftp_instance_name": "image_archive_server",
+                "ftp_server_name_en": "Image Archive Server",
+                "ftp_server_name_jp": "\u9053\u8def\u9759\u6b62\u753b\u751f\u6210\u88c5\u7f6e",
+                "ftp_server_id": 1,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": 10000,
+                "upload_status_description": "Successfully Uploaded",
+                "upload_status_description_jp": "\u6b63\u5e38\u306b\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u3057\u305f",
+                "last_update_time": "2025-04-07 16:20:18"
+            },
+            {
+                "ftp_instance_name": "sample_server_1",
+                "ftp_server_name_en": "Road Information Server 1",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30c8\u30e9\uff09",
+                "ftp_server_id": 2,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_2",
+                "ftp_server_name_en": "Road Information Server 2",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\uff09",
+                "ftp_server_id": 3,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_3",
+                "ftp_server_name_en": "Sample Server 3",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff11",
+                "ftp_server_id": 4,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_4",
+                "ftp_server_name_en": "Sample Server 4",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff12",
+                "ftp_server_id": 5,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_5",
+                "ftp_server_name_en": "Sample Server 5",
+                "ftp_server_name_jp": "\u30b5\u30f3\u30d7\u30eb\u30b5\u30fc\u30d0\u30fc5",
+                "ftp_server_id": 6,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            }
+        ],
+        "latest_upload": "2025-04-07 16:20:18",
+        "stream_status": true,
+        "ftp_transfer": true
+    },
+      {
+          "id": 10,
+          "cam_id": "10.232.4.162C03118",
+          "camera_name": "\u9ed2\u702c\uff29\uff23\u5165\u53e3\uff11",
+          "capture_server_name": "DEB-HYPV-e764ee0267b94b7d96e4cc8e55056e3f",
+          "capture_server_ip": "192.168.30.78",
+          "kanri_office": "\u5e83\u5cf6\u56fd\u9053\u4e8b\u52d9\u6240",
+          "rosen": "\u6771\u5e83\u5cf6\u5449\u9053\u8def",
+          "jouge": "\u4e0a\u308a",
+          "kilopost": 12.45,
+          "fetch_enabled": true,
+          "stream_ftp_upload_enabled": true,
+          "deleted": false,
+          "deleted_from_meta": false,
+          "access_and_preset_info": {
+              "cam_id": "10.232.4.162C03118",
+              "ptz_preset": null,
+              "ptz_correction_enabled": false,
+              "ptz_error_status": null,
+              "ptz_error_title": null,
+              "ptz_error_description": null
+          },
+"upload_status_info": [
+            {
+                "ftp_instance_name": "image_archive_server",
+                "ftp_server_name_en": "Image Archive Server",
+                "ftp_server_name_jp": "\u9053\u8def\u9759\u6b62\u753b\u751f\u6210\u88c5\u7f6e",
+                "ftp_server_id": 1,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": 10000,
+                "upload_status_description": "Successfully Uploaded",
+                "upload_status_description_jp": "\u6b63\u5e38\u306b\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u3057\u305f",
+                "last_update_time": "2025-04-07 16:20:18"
+            },
+            {
+                "ftp_instance_name": "sample_server_1",
+                "ftp_server_name_en": "Road Information Server 1",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30c8\u30e9\uff09",
+                "ftp_server_id": 2,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_2",
+                "ftp_server_name_en": "Road Information Server 2",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\uff09",
+                "ftp_server_id": 3,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_3",
+                "ftp_server_name_en": "Sample Server 3",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff11",
+                "ftp_server_id": 4,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_4",
+                "ftp_server_name_en": "Sample Server 4",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff12",
+                "ftp_server_id": 5,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_5",
+                "ftp_server_name_en": "Sample Server 5",
+                "ftp_server_name_jp": "\u30b5\u30f3\u30d7\u30eb\u30b5\u30fc\u30d0\u30fc5",
+                "ftp_server_id": 6,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            }
+        ],
+          "fetch_status_info": {
+              "cam_id": "10.232.4.162C03118",
+              "current_ptz": null,
+              "fetch_status": 1,
+              "fetch_status_desc": "Fetch success",
+              "fetch_status_desc_jp": "\u30d5\u30a7\u30c3\u30c1\u6210\u529f",
+              "last_update_time": "2025-04-07T15:10:00"
+          },
+          "error_count_info": {
+              "ftp_servers": [],
+              "total_failure_count": 0
+          },
+          "missing_from_stream_meta": 0
+      },
+      {
+          "id": 2,
+          "cam_id": "10.232.4.162C02015",
+          "camera_name": "\u9ed2\u677e",
+          "capture_server_name": "DEB-HYPV-3246c94219a04a21a31dfd69cd89c0b5",
+          "capture_server_ip": "192.168.8.114",
+          "kanri_office": "\u6d5c\u7530\u6cb3\u5ddd\u56fd\u9053\u4e8b\u52d9\u6240",
+          "rosen": "\u56fd\u9053\uff19\u53f7",
+          "jouge": "\u4e0b\u308a",
+          "kilopost": 425.117,
+          "fetch_enabled": true,
+          "stream_ftp_upload_enabled": true,
+          "deleted": false,
+          "deleted_from_meta": false,
+          "access_and_preset_info": {
+              "cam_id": "10.232.4.162C02015",
+              "ptz_preset": null,
+              "ptz_correction_enabled": false,
+              "ptz_error_status": null,
+              "ptz_error_title": null,
+              "ptz_error_description": null
+          },
+"upload_status_info": [
+            {
+                "ftp_instance_name": "image_archive_server",
+                "ftp_server_name_en": "Image Archive Server",
+                "ftp_server_name_jp": "\u9053\u8def\u9759\u6b62\u753b\u751f\u6210\u88c5\u7f6e",
+                "ftp_server_id": 1,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": 10000,
+                "upload_status_description": "Successfully Uploaded",
+                "upload_status_description_jp": "\u6b63\u5e38\u306b\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u3057\u305f",
+                "last_update_time": "2025-04-07 16:20:18"
+            },
+            {
+                "ftp_instance_name": "sample_server_1",
+                "ftp_server_name_en": "Road Information Server 1",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30c8\u30e9\uff09",
+                "ftp_server_id": 2,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_2",
+                "ftp_server_name_en": "Road Information Server 2",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\uff09",
+                "ftp_server_id": 3,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_3",
+                "ftp_server_name_en": "Sample Server 3",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff11",
+                "ftp_server_id": 4,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_4",
+                "ftp_server_name_en": "Sample Server 4",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff12",
+                "ftp_server_id": 5,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_5",
+                "ftp_server_name_en": "Sample Server 5",
+                "ftp_server_name_jp": "\u30b5\u30f3\u30d7\u30eb\u30b5\u30fc\u30d0\u30fc5",
+                "ftp_server_id": 6,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            }
+        ],
+          "fetch_status_info": {
+              "cam_id": "10.232.4.162C02015",
+              "current_ptz": null,
+              "fetch_status": 1,
+              "fetch_status_desc": "Fetch success",
+              "fetch_status_desc_jp": "\u30d5\u30a7\u30c3\u30c1\u6210\u529f",
+              "last_update_time": "2025-04-07T15:10:00"
+          },
+          "error_count_info": {
+              "ftp_servers": [],
+              "total_failure_count": 0
+          },
+          "missing_from_stream_meta": 0
+      },
+      {
+          "id": 52,
+          "cam_id": "10.232.4.162C00425",
+          "camera_name": "\u9ed2\u5c3e\u30c8\u30f3\u30cd\u30eb\u5357",
+          "capture_server_name": "DEB-HYPV-3246c94219a04a21a31dfd69cd89c0b5",
+          "capture_server_ip": "192.168.8.114",
+          "kanri_office": "\u5ca1\u5c71\u56fd\u9053\u4e8b\u52d9\u6240",
+          "rosen": "\u56fd\u9053\uff15\uff13\u53f7",
+          "jouge": "\u4e0a\u308a",
+          "kilopost": 90.7,
+          "fetch_enabled": true,
+          "stream_ftp_upload_enabled": true,
+          "deleted": false,
+          "deleted_from_meta": false,
+          "access_and_preset_info": {
+              "cam_id": "10.232.4.162C00425",
+              "ptz_preset": null,
+              "ptz_correction_enabled": false,
+              "ptz_error_status": null,
+              "ptz_error_title": null,
+              "ptz_error_description": null
+          },
+"upload_status_info": [
+            {
+                "ftp_instance_name": "image_archive_server",
+                "ftp_server_name_en": "Image Archive Server",
+                "ftp_server_name_jp": "\u9053\u8def\u9759\u6b62\u753b\u751f\u6210\u88c5\u7f6e",
+                "ftp_server_id": 1,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": 10000,
+                "upload_status_description": "Successfully Uploaded",
+                "upload_status_description_jp": "\u6b63\u5e38\u306b\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u3057\u305f",
+                "last_update_time": "2025-04-07 16:20:18"
+            },
+            {
+                "ftp_instance_name": "sample_server_1",
+                "ftp_server_name_en": "Road Information Server 1",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30c8\u30e9\uff09",
+                "ftp_server_id": 2,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_2",
+                "ftp_server_name_en": "Road Information Server 2",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\uff09",
+                "ftp_server_id": 3,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_3",
+                "ftp_server_name_en": "Sample Server 3",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff11",
+                "ftp_server_id": 4,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_4",
+                "ftp_server_name_en": "Sample Server 4",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff12",
+                "ftp_server_id": 5,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_5",
+                "ftp_server_name_en": "Sample Server 5",
+                "ftp_server_name_jp": "\u30b5\u30f3\u30d7\u30eb\u30b5\u30fc\u30d0\u30fc5",
+                "ftp_server_id": 6,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            }
+        ],
+          "fetch_status_info": {
+              "cam_id": "10.232.4.162C00425",
+              "current_ptz": null,
+              "fetch_status": 1,
+              "fetch_status_desc": "Fetch success",
+              "fetch_status_desc_jp": "\u30d5\u30a7\u30c3\u30c1\u6210\u529f",
+              "last_update_time": "2025-04-07T15:10:00"
+          },
+          "error_count_info": {
+              "ftp_servers": [],
+              "total_failure_count": 0
+          },
+          "missing_from_stream_meta": 0
+      },
+      {
+          "id": 481,
+          "cam_id": "10.232.4.162C02385",
+          "camera_name": "\u9ed2\u5c3eTN\u7d42\u70b9",
+          "capture_server_name": "DEB-HYPV-e764ee0267b94b7d96e4cc8e55056e3f",
+          "capture_server_ip": "192.168.30.78",
+          "kanri_office": "\u9ce5\u53d6\u6cb3\u5ddd\u56fd\u9053\u4e8b\u52d9\u6240",
+          "rosen": "\u56fd\u9053\uff15\uff13\u53f7",
+          "jouge": "\u4e0b\u308a",
+          "kilopost": 91.6,
+          "fetch_enabled": true,
+          "stream_ftp_upload_enabled": true,
+          "deleted": false,
+          "deleted_from_meta": false,
+          "access_and_preset_info": {
+              "cam_id": "10.232.4.162C02385",
+              "ptz_preset": null,
+              "ptz_correction_enabled": false,
+              "ptz_error_status": null,
+              "ptz_error_title": null,
+              "ptz_error_description": null
+          },
+"upload_status_info": [
+            {
+                "ftp_instance_name": "image_archive_server",
+                "ftp_server_name_en": "Image Archive Server",
+                "ftp_server_name_jp": "\u9053\u8def\u9759\u6b62\u753b\u751f\u6210\u88c5\u7f6e",
+                "ftp_server_id": 1,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": 10000,
+                "upload_status_description": "Successfully Uploaded",
+                "upload_status_description_jp": "\u6b63\u5e38\u306b\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u3057\u305f",
+                "last_update_time": "2025-04-07 16:20:18"
+            },
+            {
+                "ftp_instance_name": "sample_server_1",
+                "ftp_server_name_en": "Road Information Server 1",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30c8\u30e9\uff09",
+                "ftp_server_id": 2,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_2",
+                "ftp_server_name_en": "Road Information Server 2",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\uff09",
+                "ftp_server_id": 3,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_3",
+                "ftp_server_name_en": "Sample Server 3",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff11",
+                "ftp_server_id": 4,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_4",
+                "ftp_server_name_en": "Sample Server 4",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff12",
+                "ftp_server_id": 5,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_5",
+                "ftp_server_name_en": "Sample Server 5",
+                "ftp_server_name_jp": "\u30b5\u30f3\u30d7\u30eb\u30b5\u30fc\u30d0\u30fc5",
+                "ftp_server_id": 6,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            }
+        ],
+          "fetch_status_info": {
+              "cam_id": "10.232.4.162C02385",
+              "current_ptz": null,
+              "fetch_status": 1,
+              "fetch_status_desc": "Fetch success",
+              "fetch_status_desc_jp": "\u30d5\u30a7\u30c3\u30c1\u6210\u529f",
+              "last_update_time": "2025-04-07T15:10:00"
+          },
+          "error_count_info": {
+              "ftp_servers": [],
+              "total_failure_count": 0
+          },
+          "missing_from_stream_meta": 0
+      },
+      {
+          "id": 5,
+          "cam_id": "10.232.4.162C02394",
+          "camera_name": "\u9ed2\u5c3e\uff17",
+          "capture_server_name": "DEB-HYPV-3246c94219a04a21a31dfd69cd89c0b5",
+          "capture_server_ip": "192.168.8.114",
+          "kanri_office": "\u9ce5\u53d6\u6cb3\u5ddd\u56fd\u9053\u4e8b\u52d9\u6240",
+          "rosen": "\u56fd\u9053\uff15\uff13\u53f7",
+          "jouge": "\u4e0a\u308a",
+          "kilopost": 96.6,
+          "fetch_enabled": true,
+          "stream_ftp_upload_enabled": true,
+          "deleted": false,
+          "deleted_from_meta": false,
+          "access_and_preset_info": {
+              "cam_id": "10.232.4.162C02394",
+              "ptz_preset": null,
+              "ptz_correction_enabled": false,
+              "ptz_error_status": null,
+              "ptz_error_title": null,
+              "ptz_error_description": null
+          },
+"upload_status_info": [
+            {
+                "ftp_instance_name": "image_archive_server",
+                "ftp_server_name_en": "Image Archive Server",
+                "ftp_server_name_jp": "\u9053\u8def\u9759\u6b62\u753b\u751f\u6210\u88c5\u7f6e",
+                "ftp_server_id": 1,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": 10000,
+                "upload_status_description": "Successfully Uploaded",
+                "upload_status_description_jp": "\u6b63\u5e38\u306b\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u3057\u305f",
+                "last_update_time": "2025-04-07 16:20:18"
+            },
+            {
+                "ftp_instance_name": "sample_server_1",
+                "ftp_server_name_en": "Road Information Server 1",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30c8\u30e9\uff09",
+                "ftp_server_id": 2,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_2",
+                "ftp_server_name_en": "Road Information Server 2",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\uff09",
+                "ftp_server_id": 3,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_3",
+                "ftp_server_name_en": "Sample Server 3",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff11",
+                "ftp_server_id": 4,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_4",
+                "ftp_server_name_en": "Sample Server 4",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff12",
+                "ftp_server_id": 5,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_5",
+                "ftp_server_name_en": "Sample Server 5",
+                "ftp_server_name_jp": "\u30b5\u30f3\u30d7\u30eb\u30b5\u30fc\u30d0\u30fc5",
+                "ftp_server_id": 6,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            }
+        ],
+          "fetch_status_info": {
+              "cam_id": "10.232.4.162C02394",
+              "current_ptz": null,
+              "fetch_status": 1,
+              "fetch_status_desc": "Fetch success",
+              "fetch_status_desc_jp": "\u30d5\u30a7\u30c3\u30c1\u6210\u529f",
+              "last_update_time": "2025-04-07T15:10:00"
+          },
+          "error_count_info": {
+              "ftp_servers": [],
+              "total_failure_count": 0
+          },
+          "missing_from_stream_meta": 0
+      },
+      {
+          "id": 8,
+          "cam_id": "10.232.4.162C02400",
+          "camera_name": "\u9ed2\u5c3e\uff16\uff0d\uff12",
+          "capture_server_name": "DEB-HYPV-e764ee0267b94b7d96e4cc8e55056e3f",
+          "capture_server_ip": "192.168.30.78",
+          "kanri_office": "\u9ce5\u53d6\u6cb3\u5ddd\u56fd\u9053\u4e8b\u52d9\u6240",
+          "rosen": "\u56fd\u9053\uff15\uff13\u53f7",
+          "jouge": "\u4e0b\u308a",
+          "kilopost": 96.2,
+          "fetch_enabled": true,
+          "stream_ftp_upload_enabled": true,
+          "deleted": false,
+          "deleted_from_meta": false,
+          "access_and_preset_info": {
+              "cam_id": "10.232.4.162C02400",
+              "ptz_preset": null,
+              "ptz_correction_enabled": false,
+              "ptz_error_status": null,
+              "ptz_error_title": null,
+              "ptz_error_description": null
+          },
+"upload_status_info": [
+            {
+                "ftp_instance_name": "image_archive_server",
+                "ftp_server_name_en": "Image Archive Server",
+                "ftp_server_name_jp": "\u9053\u8def\u9759\u6b62\u753b\u751f\u6210\u88c5\u7f6e",
+                "ftp_server_id": 1,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": 10000,
+                "upload_status_description": "Successfully Uploaded",
+                "upload_status_description_jp": "\u6b63\u5e38\u306b\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u3057\u305f",
+                "last_update_time": "2025-04-07 16:20:18"
+            },
+            {
+                "ftp_instance_name": "sample_server_1",
+                "ftp_server_name_en": "Road Information Server 1",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30c8\u30e9\uff09",
+                "ftp_server_id": 2,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_2",
+                "ftp_server_name_en": "Road Information Server 2",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\uff09",
+                "ftp_server_id": 3,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_3",
+                "ftp_server_name_en": "Sample Server 3",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff11",
+                "ftp_server_id": 4,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_4",
+                "ftp_server_name_en": "Sample Server 4",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff12",
+                "ftp_server_id": 5,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_5",
+                "ftp_server_name_en": "Sample Server 5",
+                "ftp_server_name_jp": "\u30b5\u30f3\u30d7\u30eb\u30b5\u30fc\u30d0\u30fc5",
+                "ftp_server_id": 6,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            }
+        ],
+          "fetch_status_info": {
+              "cam_id": "10.232.4.162C02400",
+              "current_ptz": null,
+              "fetch_status": 1,
+              "fetch_status_desc": "Fetch success",
+              "fetch_status_desc_jp": "\u30d5\u30a7\u30c3\u30c1\u6210\u529f",
+              "last_update_time": "2025-04-07T15:10:00"
+          },
+          "error_count_info": {
+              "ftp_servers": [],
+              "total_failure_count": 0
+          },
+          "missing_from_stream_meta": 0
+      },
+      {
+          "id": 7,
+          "cam_id": "10.232.4.162C02399",
+          "camera_name": "\u9ed2\u5c3e\uff16\uff0d\uff11",
+          "capture_server_name": "DEB-HYPV-e764ee0267b94b7d96e4cc8e55056e3f",
+          "capture_server_ip": "192.168.30.78",
+          "kanri_office": "\u9ce5\u53d6\u6cb3\u5ddd\u56fd\u9053\u4e8b\u52d9\u6240",
+          "rosen": "\u56fd\u9053\uff15\uff13\u53f7",
+          "jouge": "\u4e0b\u308a",
+          "kilopost": 95.7,
+          "fetch_enabled": true,
+          "stream_ftp_upload_enabled": true,
+          "deleted": false,
+          "deleted_from_meta": false,
+          "access_and_preset_info": {
+              "cam_id": "10.232.4.162C02399",
+              "ptz_preset": null,
+              "ptz_correction_enabled": false,
+              "ptz_error_status": null,
+              "ptz_error_title": null,
+              "ptz_error_description": null
+          },
+"upload_status_info": [
+            {
+                "ftp_instance_name": "image_archive_server",
+                "ftp_server_name_en": "Image Archive Server",
+                "ftp_server_name_jp": "\u9053\u8def\u9759\u6b62\u753b\u751f\u6210\u88c5\u7f6e",
+                "ftp_server_id": 1,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": 10000,
+                "upload_status_description": "Successfully Uploaded",
+                "upload_status_description_jp": "\u6b63\u5e38\u306b\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u3057\u305f",
+                "last_update_time": "2025-04-07 16:20:18"
+            },
+            {
+                "ftp_instance_name": "sample_server_1",
+                "ftp_server_name_en": "Road Information Server 1",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30c8\u30e9\uff09",
+                "ftp_server_id": 2,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_2",
+                "ftp_server_name_en": "Road Information Server 2",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\uff09",
+                "ftp_server_id": 3,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_3",
+                "ftp_server_name_en": "Sample Server 3",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff11",
+                "ftp_server_id": 4,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_4",
+                "ftp_server_name_en": "Sample Server 4",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff12",
+                "ftp_server_id": 5,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_5",
+                "ftp_server_name_en": "Sample Server 5",
+                "ftp_server_name_jp": "\u30b5\u30f3\u30d7\u30eb\u30b5\u30fc\u30d0\u30fc5",
+                "ftp_server_id": 6,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            }
+        ],
+          "fetch_status_info": {
+              "cam_id": "10.232.4.162C02399",
+              "current_ptz": null,
+              "fetch_status": 1,
+              "fetch_status_desc": "Fetch success",
+              "fetch_status_desc_jp": "\u30d5\u30a7\u30c3\u30c1\u6210\u529f",
+              "last_update_time": "2025-04-07T15:10:00"
+          },
+          "error_count_info": {
+              "ftp_servers": [],
+              "total_failure_count": 0
+          },
+          "missing_from_stream_meta": 0
+      },
+      {
+          "id": 4,
+          "cam_id": "10.232.4.162C02392",
+          "camera_name": "\u9ed2\u5c3e\uff16",
+          "capture_server_name": "DEB-HYPV-3246c94219a04a21a31dfd69cd89c0b5",
+          "capture_server_ip": "192.168.8.114",
+          "kanri_office": "\u9ce5\u53d6\u6cb3\u5ddd\u56fd\u9053\u4e8b\u52d9\u6240",
+          "rosen": "\u56fd\u9053\uff15\uff13\u53f7",
+          "jouge": "\u4e0b\u308a",
+          "kilopost": 95.0,
+          "fetch_enabled": true,
+          "stream_ftp_upload_enabled": true,
+          "deleted": false,
+          "deleted_from_meta": false,
+          "access_and_preset_info": {
+              "cam_id": "10.232.4.162C02392",
+              "ptz_preset": null,
+              "ptz_correction_enabled": false,
+              "ptz_error_status": null,
+              "ptz_error_title": null,
+              "ptz_error_description": null
+          },
+"upload_status_info": [
+            {
+                "ftp_instance_name": "image_archive_server",
+                "ftp_server_name_en": "Image Archive Server",
+                "ftp_server_name_jp": "\u9053\u8def\u9759\u6b62\u753b\u751f\u6210\u88c5\u7f6e",
+                "ftp_server_id": 1,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": 10000,
+                "upload_status_description": "Successfully Uploaded",
+                "upload_status_description_jp": "\u6b63\u5e38\u306b\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u3057\u305f",
+                "last_update_time": "2025-04-07 16:20:18"
+            },
+            {
+                "ftp_instance_name": "sample_server_1",
+                "ftp_server_name_en": "Road Information Server 1",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30c8\u30e9\uff09",
+                "ftp_server_id": 2,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_2",
+                "ftp_server_name_en": "Road Information Server 2",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\uff09",
+                "ftp_server_id": 3,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_3",
+                "ftp_server_name_en": "Sample Server 3",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff11",
+                "ftp_server_id": 4,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_4",
+                "ftp_server_name_en": "Sample Server 4",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff12",
+                "ftp_server_id": 5,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_5",
+                "ftp_server_name_en": "Sample Server 5",
+                "ftp_server_name_jp": "\u30b5\u30f3\u30d7\u30eb\u30b5\u30fc\u30d0\u30fc5",
+                "ftp_server_id": 6,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            }
+        ],
+          "fetch_status_info": {
+              "cam_id": "10.232.4.162C02392",
+              "current_ptz": null,
+              "fetch_status": 1,
+              "fetch_status_desc": "Fetch success",
+              "fetch_status_desc_jp": "\u30d5\u30a7\u30c3\u30c1\u6210\u529f",
+              "last_update_time": "2025-04-07T15:10:00"
+          },
+          "error_count_info": {
+              "ftp_servers": [],
+              "total_failure_count": 0
+          },
+          "missing_from_stream_meta": 0
+      },
+      {
+          "id": 6,
+          "cam_id": "10.232.4.162C02398",
+          "camera_name": "\u9ed2\u5c3e\uff15",
+          "capture_server_name": "DEB-HYPV-e764ee0267b94b7d96e4cc8e55056e3f",
+          "capture_server_ip": "192.168.30.78",
+          "kanri_office": "\u9ce5\u53d6\u6cb3\u5ddd\u56fd\u9053\u4e8b\u52d9\u6240",
+          "rosen": "\u56fd\u9053\uff15\uff13\u53f7",
+          "jouge": "\u4e0b\u308a",
+          "kilopost": 94.4,
+          "fetch_enabled": true,
+          "stream_ftp_upload_enabled": true,
+          "deleted": false,
+          "deleted_from_meta": false,
+          "access_and_preset_info": {
+              "cam_id": "10.232.4.162C02398",
+              "ptz_preset": null,
+              "ptz_correction_enabled": false,
+              "ptz_error_status": null,
+              "ptz_error_title": null,
+              "ptz_error_description": null
+          },
+          "upload_status_info": [
+            {
+                "ftp_instance_name": "image_archive_server",
+                "ftp_server_name_en": "Image Archive Server",
+                "ftp_server_name_jp": "\u9053\u8def\u9759\u6b62\u753b\u751f\u6210\u88c5\u7f6e",
+                "ftp_server_id": 1,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": 10000,
+                "upload_status_description": "Successfully Uploaded",
+                "upload_status_description_jp": "\u6b63\u5e38\u306b\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u3057\u305f",
+                "last_update_time": "2025-04-07 16:20:18"
+            },
+            {
+                "ftp_instance_name": "sample_server_1",
+                "ftp_server_name_en": "Road Information Server 1",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30c8\u30e9\uff09",
+                "ftp_server_id": 2,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_2",
+                "ftp_server_name_en": "Road Information Server 2",
+                "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\uff09",
+                "ftp_server_id": 3,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_3",
+                "ftp_server_name_en": "Sample Server 3",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff11",
+                "ftp_server_id": 4,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_4",
+                "ftp_server_name_en": "Sample Server 4",
+                "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff12",
+                "ftp_server_id": 5,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            },
+            {
+                "ftp_instance_name": "sample_server_5",
+                "ftp_server_name_en": "Sample Server 5",
+                "ftp_server_name_jp": "\u30b5\u30f3\u30d7\u30eb\u30b5\u30fc\u30d0\u30fc5",
+                "ftp_server_id": 6,
+                "upload_status": 0,
+                "upload_enabled": true,
+                "upload_status_code": null,
+                "upload_status_description": null,
+                "upload_status_description_jp": null,
+                "last_update_time": "2025-04-04 16:58:15"
+            }
+        ],
+          "fetch_status_info": {
+              "cam_id": "10.232.4.162C02398",
+              "current_ptz": null,
+              "fetch_status": 1,
+              "fetch_status_desc": "Fetch success",
+              "fetch_status_desc_jp": "\u30d5\u30a7\u30c3\u30c1\u6210\u529f",
+              "last_update_time": "2025-04-07T15:10:00"
+          },
+          "error_count_info": {
+              "ftp_servers": [],
+              "total_failure_count": 0
+          },
+          "missing_from_stream_meta": 0
+      }
+  ],
+  "count": 910,
+  "status_code": 200,
+  "message": "Success",
+  "metadata": {
+      "ftp_server_info": [
+          {
+              "ftp_server_id": 1,
+              "ftp_instance_name": "image_archive_server",
+              "ftp_server_name_en": "Image Archive Server",
+              "ftp_server_name_jp": "\u9053\u8def\u9759\u6b62\u753b\u751f\u6210\u88c5\u7f6e",
+              "ftp_server_ip": "192.168.8.171"
+          },
+          {
+              "ftp_server_id": 2,
+              "ftp_instance_name": "sample_server_1",
+              "ftp_server_name_en": "Road Information Server 1",
+              "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30c8\u30e9\uff09",
+              "ftp_server_ip": "192.168.8.171"
+          },
+          {
+              "ftp_server_id": 3,
+              "ftp_instance_name": "sample_server_2",
+              "ftp_server_name_en": "Road Information Server 2",
+              "ftp_server_name_jp": "\u9053\u8def\u60c5\u5831Web\u30b5\u30fc\u30d0\uff08\u30a4\u30f3\u30bf\u30fc\u30cd\u30c3\u30c8\uff09",
+              "ftp_server_ip": "192.168.8.171"
+          },
+          {
+              "ftp_server_id": 4,
+              "ftp_instance_name": "sample_server_3",
+              "ftp_server_name_en": "Sample Server 3",
+              "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff11",
+              "ftp_server_ip": "192.168.8.171"
+          },
+          {
+              "ftp_server_id": 5,
+              "ftp_instance_name": "sample_server_4",
+              "ftp_server_name_en": "Sample Server 4",
+              "ftp_server_name_jp": "\u8ffd\u52a0\u65b9\u8def\uff12",
+              "ftp_server_ip": "192.168.8.171"
+          },
+          {
+              "ftp_server_id": 6,
+              "ftp_instance_name": "sample_server_5",
+              "ftp_server_name_en": "Sample Server 5",
+              "ftp_server_name_jp": "\u30b5\u30f3\u30d7\u30eb\u30b5\u30fc\u30d0\u30fc5",
+              "ftp_server_ip": "192.168.8.171"
+          }
+      ],
+      "upload_status_codes": [
+          {
+              "upload_status_code": 10000,
+              "upload_status_description": "Successfully Uploaded",
+              "upload_status_description_jp": "\u6b63\u5e38\u306b\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3055\u308c\u307e\u3057\u305f"
+          },
+          {
+              "upload_status_code": null,
+              "upload_status_description": null,
+              "upload_status_description_jp": null
+          },
+          {
+              "upload_status_code": 111,
+              "upload_status_description": "Connection closed unexpectedly",
+              "upload_status_description_jp": "\u63a5\u7d9a\u304c\u4e2d\u65ad\u3055\u308c\u307e\u3057\u305f"
+          }
+      ]
+  }
+}
