@@ -1,5 +1,5 @@
 'use client';
-import React, { useContext, useEffect, useRef, useState } from 'react';
+import React, { useContext, useRef, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Image from 'next/image';
 import { Input } from '@/components/ui/input';

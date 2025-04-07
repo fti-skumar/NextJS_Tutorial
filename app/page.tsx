@@ -1,5 +1,5 @@
 "use client"
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Login from "@/pages/Login";
 import { UserContext } from "@/context/UserContext";
 import PageLoader from "@/components/ui/PageLoader";
