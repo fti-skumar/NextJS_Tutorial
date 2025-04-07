@@ -1,11 +1,13 @@
 'use client';
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import Image from 'next/image';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { LuEye, LuEyeOff } from "react-icons/lu";
+import { Loader2 } from 'lucide-react';
+import { UserContext } from '@/context/UserContext';
 
 const fadeIn = keyframes`
   0% {  opacity: 0; width: 50%; }
@@ -43,24 +45,70 @@ const InputContainer = styled.div`
 const LoginButton = styled(Button)`
   width: 320px;
   background: #263238;
-  cursor: pointer;
   margin-top: 15px;
 `;
 
-type LoginProps = {
-  isLoggedIn: boolean;
-}
-
-export default function Login(props: LoginProps) {
-  const {isLoggedIn} = props;
+export default function Login() {
   const [showPassword, setShowPassword] = useState(false);
-
-  useEffect(() => {
-    console.log(isLoggedIn, 'abcdl');
-  }, [isLoggedIn]);
+  const [userDetails, setUserDetails] = useState({ username: '', password: '' });
+  const [loading, setLoading] = useState(false);
+  const loginSvgVersion = useRef(new Date().getTime());
+  const { updateUser } = useContext(UserContext);
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const { name, value } = e.target;
+    setUserDetails((prevDetails) => ({ ...prevDetails, [name]: value }));
+  };
+
+  const handleLogin = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch('/api/login', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userDetails),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        updateUser({ username: data.user.username, _id: data.user._id });
+        // console.log('Login successful:', data);
+      } else {
+        console.error('Login failed:', data.error);
+      }
+    } catch (error) {
+      console.error('Error during login:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleRegister = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch('/api/users/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(userDetails),
+      });
+      const data = await response.json();
+      if (response.ok) {
+        console.log('Registration successful:');
+      } else {
+        console.error('Registration failed:', data.error);
+      }
+    } catch (error) {
+      console.error('Error during registration:', error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -69,25 +117,29 @@ export default function Login(props: LoginProps) {
         <LoginHeading>Hello NextJS!</LoginHeading>
         <InputContainer>
           <Label htmlFor='username' className='text-[16px] text-[#263238]'>Username</Label>
-          <Input className='rounded-[5px]' id='username' type='text' placeholder=''/>
+          <Input disabled={loading} value={userDetails.username} onChange={handleInputChange} className='rounded-[5px]' name='username' id='username' type='text' placeholder=''/>
         </InputContainer>
         <InputContainer>
           <Label htmlFor='password' className='text-[16px] text-[#263238]'>Password</Label>
-          <Input className='rounded-[5px]' id='password' type={showPassword ? 'text' : 'password'} placeholder='' />
-          <div className='absolute right-2 top-9.5 cursor-pointer' onClick={togglePasswordVisibility}>
+          <Input disabled={loading} value={userDetails.password} onChange={handleInputChange} className='rounded-[5px]' name='password' id='password' type={showPassword ? 'text' : 'password'} placeholder='' />
+          <div className={`absolute right-2 top-9.5 cursor-pointer ${loading ? 'opacity-[0.5] pointer-events-none' : ''}`} onClick={togglePasswordVisibility}>
             {showPassword ? <LuEye className='text-[20px]' /> : <LuEyeOff className='text-[20px]' />}
           </div>
         </InputContainer>
-        <LoginButton className='hover:opacity-85 rounded-[5px]' onClick={() => {}}>Login</LoginButton>
+        <LoginButton disabled={loading} className='hover:opacity-85 rounded-[5px] leading-none text-[16px] cursor-pointer' onClick={handleLogin}>
+          <Loader2 className={`animate-spin ${loading ? 'block' : 'hidden'} !w-[22px] !h-[22px] `} /> {loading ? 'Loading...' : 'Login'}
+        </LoginButton>
+        <LoginButton disabled={loading} className='hover:opacity-85 rounded-[5px] leading-none text-[16px] cursor-pointer hidden' onClick={handleRegister}>
+          <Loader2 className={`animate-spin ${loading ? 'block' : 'hidden'} !w-[22px] !h-[22px] `} /> {loading ? 'Loading...' : 'Sign Up'}
+        </LoginButton>
       </LeftContainer>
       <div className='w-[418px] h-full bg-[#94b7ff] flex justify-center items-center rounded-[15px] ml-auto'>
         <Image
-          src={`/assets/login-security.svg?ver=${Date.now()}`}
+          src={`/assets/login-security.svg?ver=${loginSvgVersion.current}`}
           width={418}
           height={560}
           alt='Login Illustration'
           style={{ width: '100%', height: '100%' }}
-          unoptimized
         />
       </div>
     </Container>
