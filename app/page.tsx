@@ -1,25 +1,12 @@
 "use client"
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import Login from "@/pages/Login";
+import { UserContext } from "@/context/UserContext";
+import PageLoader from "@/components/ui/PageLoader";
 
 export default function Home() {
-  const [isLoggedIn, setisLoggedIn] = useState(false);
-
-  useEffect(() => {
-    console.log(isLoggedIn);
-  }, [isLoggedIn]);
-
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const onLogin = () => {
-    setisLoggedIn(true);
-  };
-  // Simulate an API call to check if the user is logged in
-  // const isLoggedIn = use(async () => {
-  //   const response = await fetch('/api/check-login');
-  //   const data = await response.json();
-  //   return data.isLoggedIn;
-  // });
-
+  const { user, loadingUserDetails } = useContext(UserContext);
+  
   return (
     <div
       className="
@@ -27,7 +14,17 @@ export default function Home() {
         bg-[linear-gradient(to_bottom_left,rgba(255,225,230,0.75)_5%,#fff_30%,#fff_60%,rgba(255,225,230,0.75)_100%)]
       "
     >
-      <Login isLoggedIn={isLoggedIn} />
+      {
+        loadingUserDetails ?
+          <PageLoader />
+          :
+          user.username !== '' ?
+            <div className="w-full h-full flex items-center justify-center">
+              <h1 className="text-2xl font-bold text-gray-800">Welcome, {(user?.username ?? '')}!</h1>
+            </div>
+            :
+            <Login />
+      }
     </div>
   );
 }
