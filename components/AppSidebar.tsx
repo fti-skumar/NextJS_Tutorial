@@ -35,7 +35,13 @@ export function AppSidebar({sidebarOpen, toggleSidebar}: AppSidebarProps) {
   const { open, setOpen } = useSidebar();
   const router = useRouter();
   const location = usePathname();
-  console.log('abcdl', location);
+
+  const handleLogoClick = () => {
+    if (location !== '/cameras') {
+      router.push('/cameras');
+    }
+  }
+
   return (
     <Sidebar
       collapsible="icon"
@@ -49,7 +55,7 @@ export function AppSidebar({sidebarOpen, toggleSidebar}: AppSidebarProps) {
         <SidebarMenuButton
           size="lg"
           className={`data-[state=open]:bg-sidebar-accent cursor-pointer data-[state=open]:text-sidebar-accent-foreground ${!open ? 'gap-[0]' : ''}`}
-          onClick={() => {(location !== '/cameras') ? router.push('/cameras') : ()=>{}}}
+          onClick={() => {handleLogoClick()}}
         >
           <div className="flex size-10 items-center justify-center text-sidebar-primary-foreground">
             <Image src={NextLogo} alt="next-logo" className="size-10" />
