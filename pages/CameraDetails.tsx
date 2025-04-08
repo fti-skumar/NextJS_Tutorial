@@ -6,6 +6,7 @@ import LiveView from '../app/assets/live-view.jpg';
 import React from "react";
 import styled from "styled-components";
 import PageHeader from "@/components/ui/PageHeader";
+import { ICamera } from "@/app/types/interface";
 
 const MainContainer = styled.div``;
 const ContentContainer = styled.div``;
@@ -17,11 +18,11 @@ const DetailsWrapper = styled.div``;
 const RightSection = styled.div``;
 
 interface CameraDetailsProps {
-  camera: any;
+  camera: ICamera;
 }
 
 export default function CameraDetails({ camera }: CameraDetailsProps) {
-  const getCameraStatus = (camera: any) => {
+  const getCameraStatus = (camera: ICamera) => {
     if ((!camera?.fetch_enabled) || (camera?.fetch_enabled && camera?.fetch_status_info.fetch_status === 0)) {
       return 'Fetch Disabled';
     } else if (camera?.fetch_enabled && camera?.fetch_status_info.fetch_status === 1) {
@@ -35,7 +36,7 @@ export default function CameraDetails({ camera }: CameraDetailsProps) {
     }
   };
 
-  const getLatestSuccessfulUploadTime = (camera: any) => {
+  const getLatestSuccessfulUploadTime = (camera: ICamera) => {
     let formattedDate = 'Never Succeeded';
 
     const filteredByUploadEnabled = camera?.upload_status_info?.filter(status => status);

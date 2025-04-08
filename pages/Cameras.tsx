@@ -5,11 +5,12 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import { GiCctvCamera } from 'react-icons/gi';
 import PageHeader from '@/components/ui/PageHeader';
+import { ICamera } from '@/app/types/interface';
 
 const MainContainer = styled.div``;
 const ContentContainer = styled.div``;
 
-export default function CamerasList({ data }: { data: any[] }) {
+export default function CamerasList({ data }: { data: ICamera[] }) {
   return (
     <MainContainer className="flex h-screen bg-white pr-28 pl-10">
       <ContentContainer className="space-y-2 text-sm ml-16 p-6">
