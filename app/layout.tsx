@@ -26,7 +26,7 @@ export default function MainLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#f9f9fb]`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#f6f4f7]`}
       >
         <Providers>
           {children}

@@ -35,17 +35,6 @@ export default function CamerasList({ data }: { data: ICamera[] }) {
             ))
           }
         </div>
-
-        {data?.map((item, index) => (
-          <div key={index} className="flex items-center text-gray-600">
-            <BiAbacus className="text-orange-500 text-xs mr-2" />
-            <div>
-              <Link href={`/cameras/${item?.cam_id}`} className="font-semibold hover:underline cursor-pointer">
-                {item?.camera_name || ''}
-              </Link>
-            </div>
-          </div>
-        ))}
       </ContentContainer>
     </MainContainer>
   );
