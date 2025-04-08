@@ -24,7 +24,7 @@ export default function Home() {
       "
     >
       {
-        (loadingUserDetails || user._id === '' || true) ?
+        (loadingUserDetails || user._id === '') ?
           <PageLoader />
           :
           null
