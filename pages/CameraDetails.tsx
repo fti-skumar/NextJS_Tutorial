@@ -1,6 +1,5 @@
 'use client';
 
-import { GiCctvCamera } from "react-icons/gi";
 import Image from "next/image";
 import LiveView from '../app/assets/live-view.jpg';
 import React from "react";
