@@ -7,6 +7,7 @@ import React from "react";
 import styled from "styled-components";
 import PageHeader from "@/components/ui/PageHeader";
 import { ICamera } from "@/app/types/interface";
+import { Cctv } from "lucide-react";
 
 const MainContainer = styled.div``;
 const ContentContainer = styled.div``;
@@ -62,19 +63,19 @@ export default function CameraDetails({ camera }: CameraDetailsProps) {
   };
 
   return (
-    <MainContainer className="flex h-screen bg-white pr-28 pl-10">
-      <ContentContainer className="flex-1 ml-16 p-6">
+    <MainContainer className="flex h-full w-[1024px]">
+      <ContentContainer className="flex-1">
         <PageHeader
-          icon={<GiCctvCamera size={30} />}
+          icon={<Cctv size={30} />}
           title={camera?.camera_name || ''}
           backButton
           areaTitle="Cameras"
         />
-        <OverviewContainer className="flex">
+        <OverviewContainer className="flex mt-[56px]">
           <LeftSection className="flex flex-col flex-1 gap-6">
-            <CameraDetailsCard className="flex border bg-white">
+            <CameraDetailsCard className="flex border shrink-0">
               <IconBox className="w-[60px] h-full flex items-center justify-center border-r pr-2 mr-4">
-                <GiCctvCamera className="text-gray-500 text-xl" />
+                <Cctv className="text-gray-500 text-xl" />
               </IconBox>
               <DetailsWrapper className="flex-1">
                 <h2 className="text-[#787f85] font-semibold text-[14px] p-3 ml-[-5px]">CAMERA DETAILS</h2>
@@ -118,7 +119,7 @@ export default function CameraDetails({ camera }: CameraDetailsProps) {
             </CameraDetailsCard>
           </LeftSection>
 
-          <RightSection className="border bg-white flex items-center justify-center w-[650px] h-[400px] ml-6">
+          <RightSection className="border flex items-center justify-center w-[600px] h-[400px] ml-6">
             <Image src={LiveView} alt="Live view" className="w-full h-full object-cover" />
           </RightSection>
         </OverviewContainer>

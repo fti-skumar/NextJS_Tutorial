@@ -112,7 +112,7 @@ export default function Login() {
   };
 
   return (
-    <Container className='w-full h-[560px] max-w-[411px] flex justify-center items-center padding-[10px] border-[1px] border-[#94b7ff] shadow-[rgba(50,69,82,0.15)_0px_20px_30px_0px] rounded-[15px] overflow-hidden'>
+    <Container className='w-full h-[560px] max-w-[411px] flex justify-center items-center padding-[10px] border-[1px] border-[#94b7ff] shadow-[0px_20px_30px_0px_rgba(50,69,82,0.15)] rounded-[10px] overflow-hidden'>
       <LeftContainer className='opacity-[0] w-[0] h-full flex items-center gap-[20px] flex-col p-[80px_0]'>
         <LoginHeading>Hello NextJS!</LoginHeading>
         <InputContainer>
@@ -133,7 +133,7 @@ export default function Login() {
           <Loader2 className={`animate-spin ${loading ? 'block' : 'hidden'} !w-[22px] !h-[22px] `} /> {loading ? 'Loading...' : 'Sign Up'}
         </LoginButton>
       </LeftContainer>
-      <div className='w-[418px] h-full bg-[#94b7ff] flex justify-center items-center rounded-[15px] ml-auto'>
+      <div className='w-[418px] h-full bg-[#94b7ff] flex justify-center items-center rounded-[10px] ml-auto'>
         <Image
           src={`/assets/login-security.svg?ver=${loginSvgVersion.current}`}
           width={418}

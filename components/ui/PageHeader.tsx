@@ -14,7 +14,7 @@ export default function PageHeader({ icon, title, backButton = false, areaTitle 
   const router = useRouter();
 
   return (
-    <div className="flex justify-between items-center mb-4 h-32">
+    <div className="flex justify-between items-center mb-4">
       <div className="flex gap-3.5">
         <div className="mt-[15px] text-xl text-gray-500">
           {icon}

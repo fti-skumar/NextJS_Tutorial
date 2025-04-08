@@ -19,10 +19,7 @@ const LoginPage = () => {
   
   return (
     <div
-      className="
-        w-screen h-screen flex items-center justify-center
-        bg-[#f6f4f7]
-      "
+      className="w-screen h-screen flex items-center justify-center bg-[#f6f4f7]"
     >
       <Login />
     </div>
