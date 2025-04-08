@@ -1,8 +1,12 @@
+import cameraData from '../../data/data.json'; 
 import CameraDetails from '@/pages/CameraDetails';
-import cameraData from '../../data/data.json'; // adjust path as needed
+import { ICamera } from '@/app/types/interface';
 
-export default async function Page({ params }: { params: { id: string } }) {
-  const camera = cameraData?.data?.find((cam) => cam?.cam_id === params?.id); // will be replaced with API call
+export type PageProps = Promise<{ id: string }>;
 
-  return <CameraDetails camera={camera} />;
+export default async function Page(props: { params: PageProps }) {
+  const { id } = await props.params;
+  const camera = cameraData?.data.find(cam => cam?.cam_id === id);
+
+  return <CameraDetails camera={camera as unknown as  ICamera} />;
 }
