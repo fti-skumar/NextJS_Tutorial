@@ -1,4 +1,4 @@
-import cameraData from '../../data/data.json'; 
+import cameraData from '../../../data/data.json'; 
 import CameraDetails from '@/pages/CameraDetails';
 import { ICamera } from '@/app/types/interface';
 

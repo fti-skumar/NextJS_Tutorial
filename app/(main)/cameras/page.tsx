@@ -1,6 +1,6 @@
-import data from '../data/data.json';
+import data from '../../data/data.json';
 import CamerasList from '@/pages/Cameras'; // client component
-import { ICamera } from '../types/interface';
+import { ICamera } from '../../types/interface';
 
 
 export default function Cameras() {

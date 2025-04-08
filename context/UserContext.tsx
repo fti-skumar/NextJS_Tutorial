@@ -20,6 +20,14 @@ const UserProvider = (
   }
   
   useEffect(() => {
+    // Only fetch if user is not already set (i.e., freshly logged in)
+    console.log('abcdu', user);
+    if (user._id) {
+      setLoadingUserDetails(false);
+      return;
+    }
+
+
     const getUser = async () => {
       try {
         // Fetch user data from the API
@@ -37,7 +45,7 @@ const UserProvider = (
     }
   
     getUser();
-  }, []);
+  }, [user._id]); // Only run if user._id changes
 
   return (
     <UserContext.Provider value={{ user, loadingUserDetails, updateUser }}>

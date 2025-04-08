@@ -12,7 +12,7 @@ const ContentContainer = styled.div``;
 
 export default function CamerasList({ data }: { data: ICamera[] }) {
   return (
-    <MainContainer className="flex h-screen bg-white pr-28 pl-10">
+    <MainContainer className="flex h-full">
       <ContentContainer className="space-y-2 text-sm ml-16 p-6">
         <PageHeader icon={<GiCctvCamera size={30} />} title="Cameras" backButton={false} />
         {data?.map((item, index) => (
