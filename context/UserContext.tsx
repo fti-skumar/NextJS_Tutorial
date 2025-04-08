@@ -21,7 +21,6 @@ const UserProvider = (
   
   useEffect(() => {
     // Only fetch if user is not already set (i.e., freshly logged in)
-    console.log('abcdu', user);
     if (user._id) {
       setLoadingUserDetails(false);
       return;
