@@ -23,7 +23,7 @@ interface CameraDetailsProps {
 
 export default function CameraDetails({ camera }: CameraDetailsProps) {
   const getCameraStatus = (camera: ICamera) => {
-    if ((!camera?.fetch_enabled) || (camera?.fetch_enabled && camera?.fetch_status_info.fetch_status === 0)) {
+    if ((!camera?.fetch_enabled) || (camera?.fetch_enabled && camera?.fetch_status_info?.fetch_status === 0)) {
       return 'Fetch Disabled';
     } else if (camera?.fetch_enabled && camera?.fetch_status_info.fetch_status === 1) {
       return 'Fetch Enabled';
@@ -40,11 +40,11 @@ export default function CameraDetails({ camera }: CameraDetailsProps) {
     let formattedDate = 'Never Succeeded';
 
     const filteredByUploadEnabled = camera?.upload_status_info?.filter(status => status);
-    const filteredByStatusCode = filteredByUploadEnabled?.filter(status => status.upload_status_code === 10000);
+    const filteredByStatusCode = filteredByUploadEnabled?.filter(status => status?.upload_status_code === 10000);
 
     if (filteredByStatusCode && filteredByStatusCode.length > 0) {
       const latestItem = filteredByStatusCode.reduce((latest, current) => {
-        return new Date(current.last_update_time) > new Date(latest.last_update_time) ? current : latest;
+        return new Date(current.last_update_time) > new Date(latest?.last_update_time) ? current : latest;
       });
 
       const lastUpdateTime = new Date(latestItem.last_update_time);
