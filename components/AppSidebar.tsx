@@ -15,7 +15,7 @@ import {
 import Image from "next/image";
 import NextLogo from "../public/assets/nextjs-logo.svg";
 // import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 // Menu items.
 const items = [
@@ -33,9 +33,9 @@ interface AppSidebarProps {
 
 export function AppSidebar({sidebarOpen, toggleSidebar}: AppSidebarProps) {
   const { open, setOpen } = useSidebar();
-  // const [sidebarOpen, setSidebarOpen] = useState(false);
   const router = useRouter();
-
+  const location = usePathname();
+  console.log('abcdl', location);
   return (
     <Sidebar
       collapsible="icon"
@@ -49,7 +49,7 @@ export function AppSidebar({sidebarOpen, toggleSidebar}: AppSidebarProps) {
         <SidebarMenuButton
           size="lg"
           className={`data-[state=open]:bg-sidebar-accent cursor-pointer data-[state=open]:text-sidebar-accent-foreground ${!open ? 'gap-[0]' : ''}`}
-          onClick={() => {router.push('/cameras');}}
+          onClick={() => {(location !== '/cameras') && router.push('/cameras');}}
         >
           <div className="flex size-10 items-center justify-center text-sidebar-primary-foreground">
             <Image src={NextLogo} alt="next-logo" className="size-10" />
@@ -66,7 +66,7 @@ export function AppSidebar({sidebarOpen, toggleSidebar}: AppSidebarProps) {
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
-                <SidebarMenuItem key={item.title}>
+                <SidebarMenuItem key={item.title} className={`${location === '/cameras' ? 'pointer-events-none': ''}`}>
                   <SidebarMenuButton asChild>
                     <a href={item.url}>
                       <item.icon />
