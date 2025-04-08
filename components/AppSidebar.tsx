@@ -49,7 +49,7 @@ export function AppSidebar({sidebarOpen, toggleSidebar}: AppSidebarProps) {
         <SidebarMenuButton
           size="lg"
           className={`data-[state=open]:bg-sidebar-accent cursor-pointer data-[state=open]:text-sidebar-accent-foreground ${!open ? 'gap-[0]' : ''}`}
-          onClick={() => {(location !== '/cameras') && router.push('/cameras');}}
+          onClick={() => {(location !== '/cameras') ? router.push('/cameras') : ()=>{}}}
         >
           <div className="flex size-10 items-center justify-center text-sidebar-primary-foreground">
             <Image src={NextLogo} alt="next-logo" className="size-10" />
