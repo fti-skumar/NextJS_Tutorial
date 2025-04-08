@@ -25,11 +25,11 @@ export default function CameraDetails({ camera }: CameraDetailsProps) {
   const getCameraStatus = (camera: ICamera) => {
     if ((!camera?.fetch_enabled) || (camera?.fetch_enabled && camera?.fetch_status_info?.fetch_status === 0)) {
       return 'Fetch Disabled';
-    } else if (camera?.fetch_enabled && camera?.fetch_status_info.fetch_status === 1) {
+    } else if (camera?.fetch_enabled && camera?.fetch_status_info?.fetch_status === 1) {
       return 'Fetch Enabled';
-    } else if (camera?.fetch_enabled && camera?.fetch_status_info.fetch_status === 2) {
+    } else if (camera?.fetch_enabled && camera?.fetch_status_info?.fetch_status === 2) {
       return 'Fetch Failed';
-    } else if (camera?.fetch_enabled && camera?.fetch_status_info.fetch_status === 3) {
+    } else if (camera?.fetch_enabled && camera?.fetch_status_info?.fetch_status === 3) {
       return 'Awaiting Fetch';
     } else {
       return 'Awaiting Fetch';
