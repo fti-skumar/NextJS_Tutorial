@@ -133,10 +133,10 @@ export default function Login() {
           <Loader2 className={`animate-spin ${loading ? 'block' : 'hidden'} !w-[22px] !h-[22px] `} /> {loading ? 'Loading...' : 'Sign Up'}
         </LoginButton>
       </LeftContainer>
-      <div className='w-[418px] h-full bg-[#94b7ff] flex justify-center items-center rounded-[10px] ml-auto'>
+      <div className='w-[426px] h-full bg-[#94b7ff] flex justify-center items-center rounded-[10px] ml-auto'>
         <Image
           src={`/assets/login-security.svg?ver=${loginSvgVersion.current}`}
-          width={418}
+          width={426}
           height={560}
           alt='Login Illustration'
           style={{ width: '100%', height: '100%' }}

@@ -6,6 +6,7 @@ import { UserContext } from "@/context/UserContext";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { Loader2 } from "lucide-react";
+import PageLoader from "@/components/ui/PageLoader";
 
 export default function MainLayout({
   children,
@@ -47,8 +48,10 @@ export default function MainLayout({
   return (
     <div className="w-screen h-screen flex">
       {
-        loadingUserDetails ?
-          null
+        (loadingUserDetails || user._id === '') ?
+          <div className="w-full h-full flex items-center justify-center">
+            <PageLoader />
+          </div>
           :
           <>
             <SidebarProvider defaultOpen={false} className="w-[unset] shadow-[0px_0px_7px_0px_#0066ff0a]">

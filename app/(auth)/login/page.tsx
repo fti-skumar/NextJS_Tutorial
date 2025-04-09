@@ -1,4 +1,5 @@
 "use client";
+import PageLoader from '@/components/ui/PageLoader';
 import { UserContext } from '@/context/UserContext';
 import Login from '@/pages/Login';
 import { useRouter } from 'next/navigation';
@@ -18,11 +19,15 @@ const LoginPage = () => {
   }, [user, loadingUserDetails, router]);
   
   return (
-    <div
-      className="w-screen h-screen flex items-center justify-center bg-[#f6f4f7]"
-    >
-      <Login />
-    </div>
+    <>
+      {loadingUserDetails ? (
+        <div className="w-full h-full flex items-center justify-center">
+          <PageLoader />
+        </div>
+      ) : (
+        <Login />
+      )}
+    </>
   );
 };
 

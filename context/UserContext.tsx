@@ -1,4 +1,5 @@
 'use client';
+import { useRouter } from 'next/navigation';
 import React, { createContext, useEffect, useState } from 'react';
 
 // Create a context for user data
@@ -14,6 +15,7 @@ const UserProvider = (
   }>) => {
   const [user, setUser] = useState({username: '', _id: ''});
   const [loadingUserDetails, setLoadingUserDetails] = useState(true);
+  const router = useRouter();
 
   const updateUser = (user: {username: string, _id: string}) => {
     setUser(user);
@@ -31,14 +33,21 @@ const UserProvider = (
       try {
         // Fetch user data from the API
         const res = await fetch("/api/users/me");
+        console.log('abcdr', res);
         if (res.ok) {
           const data = await res.json();
           setUser(data.user); // Store user in context or state
+          if (data.user._id === '') {
+            router.push('/login');
+          }
+        } else {
+          router.push('/login');
         }
+        setLoadingUserDetails(false);
       }
       catch (error) {
         console.error("Error fetching user data:", error);
-      } finally {
+        router.push('/login');
         setLoadingUserDetails(false);
       }
     }
