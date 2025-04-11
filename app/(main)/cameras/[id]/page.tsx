@@ -8,7 +8,7 @@ export default async function Page(props: { params: PageProps }) {
   const { id } = await props.params;
   const baseUrl = await getBaseUrl();
 
-  const res = await fetch(`${baseUrl}/api/get-cameras/${id}`, {
+  const res = await fetch(`${baseUrl}/api/cameras/${id}`, {
     cache: 'no-store', // disables caching for fresh data
   });
 
