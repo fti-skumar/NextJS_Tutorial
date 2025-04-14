@@ -10,6 +10,7 @@ export async function GET(
 
   try {
     const connection = await connectMySQL();
+    console.log("✅ MySQL connection successful");
 
     const [rows] = await connection.execute(
       "SELECT * FROM test.stream_tbl WHERE cam_id = ?",
@@ -18,8 +19,11 @@ export async function GET(
 
     await connection.end();
 
+    console.log("✅ Data fetched successfully:", rows);
+
     return NextResponse.json({ message: "Success", data: rows });
   } catch (error) {
+    console.error("❌ MySQL connection failed:", (error as Error).message);
     return NextResponse.json(
       { message: "Failed to fetch data", error: (error as Error).message },
       { status: 500 }
