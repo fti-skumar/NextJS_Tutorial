@@ -7,7 +7,7 @@ export async function GET() {
     const connection = await connectMySQL();
 
     const [rows] = await connection.execute(
-      'SELECT * FROM test.stream_tbl'
+      'SELECT * FROM stream_tbl'
     );
 
     await connection.end();
