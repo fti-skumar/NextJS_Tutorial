@@ -13,7 +13,7 @@ export async function GET(
     console.log("✅ MySQL connection successful");
 
     const [rows] = await connection.execute(
-      "SELECT * FROM test.stream_tbl WHERE cam_id = ?",
+      "SELECT * FROM stream_tbl WHERE cam_id = ?",
       [id]
     );
 
