@@ -12,6 +12,8 @@ export default async function Page(props: { params: PageProps }) {
     cache: 'no-store', // disables caching for fresh data
   });
 
+  console.log(res,'res');//debug
+
   if (!res.ok) {
     // handle error, fallback UI or log
     return <div>Failed to fetch camera details</div>;
